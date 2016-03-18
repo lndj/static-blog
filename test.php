@@ -59,9 +59,13 @@ function getAttrArr(Iterator $file)
 }
 
 //Test to use
+//
+//$file = FileLineGenerator('./source/_posts/hello-world.md');
+//
+//$attr_arr = getAttrArr($file);
+//
+//print_r($attr_arr);
 
-$file = FileLineGenerator('./source/_posts/hello-world.md');
-
-$attr_arr = getAttrArr($file);
-
-print_r($attr_arr);
+exec('php -S localhost:8000 -t public',$return_var);
+echo $return_var;
+// echo '[INFO] The server is runing,the url is http://localhost:8000';
