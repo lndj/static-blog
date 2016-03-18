@@ -25,7 +25,7 @@ php stb init
 3. Write a new post
 
 ```shell 
-php stb new
+php stb new 'a post title'
 ```
 
 ## Part one
