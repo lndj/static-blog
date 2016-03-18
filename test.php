@@ -36,7 +36,6 @@ function getAttrArr(Iterator $file)
 		if ($line_num > 1 && trim($line) == '---') {
 			break;
 		}
-		// echo $line;
 
 		if ($line_num > 1) {
 
@@ -52,18 +51,16 @@ function getAttrArr(Iterator $file)
 
 					$attr_str .= ':' . $v;
 				}
-
 			}
 			$attr_arr[$temp[0]] = $attr_str;
 		}
 	}
-
 	return $attr_arr;
 }
 
 //Test to use
 
-$file = FileLineGenerator('post.md');
+$file = FileLineGenerator('./source/_posts/hello-world.md');
 
 $attr_arr = getAttrArr($file);
 
