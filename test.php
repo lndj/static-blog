@@ -70,7 +70,3 @@ print_r($attr_arr);
 // exec('php -S localhost:8000 -t public',$return_var);
 // echo $return_var;
 
-
-$config = yaml_parse_file('config.yml');
-
-var_dump($config);
