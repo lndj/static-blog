@@ -22,9 +22,9 @@ TODO...
 
 # 项目依赖
 
-1. Symfony console
-
-2. TODO...
+1. Symfony/console
+2. Symfony/yaml
+3. Symfony/finder
 
 # 其他说明
 
