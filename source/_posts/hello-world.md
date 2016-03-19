@@ -3,7 +3,7 @@ title: This is a post.
 tags: php,js
 date: 2016-03-18 11:11:11
 update-date: 2016-03-18 11:11:11
-autor: Luo Ning
+author: Luo Ning
 ---
 # Hello World!
 
@@ -25,7 +25,7 @@ php stb init
 3. Write a new post
 
 ```shell 
-php stb new
+php stb new 'a post title'
 ```
 
 ## Part one
