@@ -5,8 +5,7 @@ description: 'This is a test Blog,Powered by Static-blog.'
 author: Luo Ning
 language: zh-CN
 timezone: Asia/Shanghai
-
 # Other
-theme: 
+theme:
   name: default
   author: luoning
