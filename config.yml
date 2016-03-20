@@ -7,8 +7,6 @@ language: zh-CN
 timezone: Asia/Shanghai
 
 # Other
-
 theme: 
   name: default
   author: luoning
-
