@@ -1,7 +1,14 @@
 # Site
 title: Near_Je's Blog
 subtitle:
-description: This is a test Blog , Powered by Static-blog.
+description: 'This is a test Blog,Powered by Static-blog.'
 author: Luo Ning
 language: zh-CN
 timezone: Asia/Shanghai
+
+# Other
+
+theme: 
+  name: default
+  author: luoning
+
