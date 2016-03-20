@@ -3,7 +3,6 @@
         "symfony/yaml": "^3.0",
         "symfony/console": "^3.0",
         "symfony/process": "^3.0",
-        "symfony/finder": "^3.0",
-        "laravel/laravel": "^5.2"
+        "symfony/finder": "^3.0"
     }
 }
