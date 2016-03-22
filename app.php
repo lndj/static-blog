@@ -6,6 +6,12 @@ use Symfony\Component\Yaml\Parser;
 use Symfony\Component\Yaml\ParseException;
 use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Yaml\Dumper;
+use Stb\Command\GreetCommand;
+
+
+$greet = new GreetCommand();
+
+var_dump($greet);
 
 // $yaml = new Parser();
 
@@ -16,9 +22,9 @@ use Symfony\Component\Yaml\Dumper;
 // }
 // var_dump( $value );
 
-$yaml = Yaml::parse(file_get_contents('config.yml'));
+// $yaml = Yaml::parse(file_get_contents('config.yml'));
 
-var_dump( $yaml );
+// var_dump( $yaml );
 
 // $array = array(
 //     'foo' => 'bar',

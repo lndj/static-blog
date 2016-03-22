@@ -6,3 +6,5 @@
 2. 本地使用`sha1/filename.md.sha1`文件作为存储，用于之后校验。
 
 ### 二、尽快确定项目主要结构
+
+1. 使用 `composer` 提供的 `autoloader` 。
