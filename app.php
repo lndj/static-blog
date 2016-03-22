@@ -11,7 +11,7 @@ use Stb\Command\GreetCommand;
 
 $greet = new GreetCommand();
 
-var_dump($greet);
+// var_dump($greet);
 
 // $yaml = new Parser();
 
