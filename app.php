@@ -6,12 +6,19 @@ use Symfony\Component\Yaml\Parser;
 use Symfony\Component\Yaml\ParseException;
 use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Yaml\Dumper;
+
 use Stb\Command\GreetCommand;
+use Symfony\Component\Console\Application;
 
 
-$greet = new GreetCommand();
+// $greet = new GreetCommand();
 
-var_dump($greet);
+
+$application = new Application();
+$application->add(new GreetCommand());
+$application->run();
+
+// var_dump($greet);
 
 // $yaml = new Parser();
 

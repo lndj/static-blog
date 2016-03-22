@@ -15,14 +15,33 @@ class GreetCommand extends Command
         $this
             ->setName('demo:greet')
             ->setDescription('Greet someone')
-            ->addArgument('name', InputArgument::REQUIRED, 'Who do you want to greet?')
+            ->addArgument(
+                'name',
+                InputArgument::OPTIONAL,
+                'Who do you want to greet?'
+            )
+            ->addOption(
+               'yell',
+               null,
+               InputOption::VALUE_NONE,
+               'If set, the task will yell in uppercase letters'
+            )
         ;
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $name = $input->getArgument('name');
-        $text = 'Hello '.$name;
+        if ($name) {
+            $text = 'Hello '.$name;
+        } else {
+            $text = 'Hello';
+        }
+
+        if ($input->getOption('yell')) {
+            $text = strtoupper($text);
+        }
+
         $output->writeln($text);
     }
 }
