@@ -11,6 +11,9 @@
             "Stb\\": "src/"
         }
     },
+ 	"bin": [
+        "bin/stb"
+    ],
     "config": {
         "preferred-install": "dist"
     }
