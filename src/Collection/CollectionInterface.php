@@ -6,7 +6,7 @@
 
 namespace Stb\Collection;
 
-class CollectionInterface extends \IteratorAggregate, \ArrayAccess 
+interface CollectionInterface extends \IteratorAggregate, \ArrayAccess 
 {
 	/**
 	 * @param string $name
