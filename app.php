@@ -7,7 +7,7 @@ use Symfony\Component\Yaml\ParseException;
 use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Yaml\Dumper;
 
-use Stb\Command\GreetCommand;
+use Stb\Console\GreetCommand;
 use Symfony\Component\Console\Application;
 
 
