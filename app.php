@@ -17,6 +17,7 @@ use Symfony\Component\Console\Application;
 
 $application = new Application();
 $application->add(new InitCommand());
+$application->add(new GreetCommand());
 $application->run();
 
 // var_dump($greet);
