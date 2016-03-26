@@ -8,17 +8,17 @@ use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Yaml\Dumper;
 
 use Stb\Console\GreetCommand;
+use Stb\Console\InitCommand;
+use Stb\Console\ServerCommand;
 use Symfony\Component\Console\Application;
 
 
-// $greet = new GreetCommand();
-
-
 $application = new Application();
+$application->add(new InitCommand());
 $application->add(new GreetCommand());
+$application->add(new ServerCommand());
 $application->run();
 
-// var_dump($greet);
 
 // $yaml = new Parser();
 
