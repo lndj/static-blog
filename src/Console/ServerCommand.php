@@ -22,7 +22,7 @@ class ServerCommand extends Command
     ;
   }
 
-  protected function execute()
+  protected function execute(InputInterface $iput, OutputInterface $output)
   {
     //TODO start the built-in web server.
   }
