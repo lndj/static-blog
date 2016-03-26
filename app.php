@@ -1,21 +1,8 @@
 <?php
 
 require 'vendor/autoload.php';
-$commands = require_once __DIR__ . '/src/Console/console.php';
-
-
-
-use Symfony\Component\Console\Application;
-
-
-$application = new Application();
-// $application->add(new InitCommand());
-// $application->add(new GreetCommand());
-// $application->add(new ServerCommand());
-// $application->add(new NewCommand());
-// $application->add(new GenerateCommand());
-// $application->add(new CleanCommand());
-
+$commands = require_once __DIR__ . '/bootstrap/console.php';
+$application = require_once __DIR__ . '/bootstrap/app.php';
 
 $application->addCommands(
     $commands
