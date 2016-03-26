@@ -19,11 +19,21 @@ class ServerCommand extends Command
     $this
     ->setName('server')
     ->setDescription('Start the local server.')
+    ->addOption(
+        'port',
+        'p',
+        InputOption::VALUE_REQUIRED,
+        'Designated port of local web server'
+    )
     ;
   }
 
   protected function execute(InputInterface $iput, OutputInterface $output)
   {
+
+      if ($port = $iput->getOption('port')) {
+          $output->writeln('The port you set is ' . $port);
+      }
     //TODO start the built-in web server.
   }
 }
