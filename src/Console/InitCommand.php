@@ -28,7 +28,7 @@ class InitCommand extends Command
 
   protected function execute(InputInterface $input, OutputInterface $output)
   {
-    $folder = $this->getArgument('folder');
+    $folder = $input->getArgument('folder');
 
     if ($folder) {
       //TODO

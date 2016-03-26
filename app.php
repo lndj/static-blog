@@ -8,6 +8,7 @@ use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Yaml\Dumper;
 
 use Stb\Console\GreetCommand;
+use Stb\Console\InitCommand;
 use Symfony\Component\Console\Application;
 
 
@@ -15,7 +16,7 @@ use Symfony\Component\Console\Application;
 
 
 $application = new Application();
-$application->add(new GreetCommand());
+$application->add(new InitCommand());
 $application->run();
 
 // var_dump($greet);
