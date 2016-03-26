@@ -12,6 +12,7 @@ use Stb\Console\InitCommand;
 use Stb\Console\ServerCommand;
 use Stb\Console\NewCommand;
 use Stb\Console\GenerateCommand;
+use Stb\Console\CleanCommand;
 use Symfony\Component\Console\Application;
 
 
@@ -21,6 +22,7 @@ $application->add(new GreetCommand());
 $application->add(new ServerCommand());
 $application->add(new NewCommand());
 $application->add(new GenerateCommand());
+$application->add(new CleanCommand());
 $application->run();
 
 
