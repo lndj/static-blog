@@ -1,6 +1,6 @@
 <?php
 
-namespace Stb\Console;
+namespace Stb;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -14,11 +14,19 @@ use Symfony\Component\Console\Application as Console;
  */
 class Application extends Console
 {
+    private $reflector;
   /**
    *
    */
-  function __construct(Input)
+  function __construct( )
   {
-    # code...
+    $this->reflector = new \ReflectionClass('Stb\Console');
+  }
+
+  public function addCommands()
+  {
+      $classes = $this->reflector->getName();
+
+      var_dump($classes);
   }
 }
