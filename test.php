@@ -6,6 +6,10 @@
  *  The code for static-blog.
  */
 
+require 'vendor/autoload.php';
+
+use Stb\Configure\ApplicationConfig;
+
 /**
  *  使用生成器高效迭代处理大型数据集
  *  @param String $filename
@@ -44,9 +48,9 @@ function getAttrArr(Iterator $file)
 			$attr_str = trim($temp[1]);
 
 			if (count($temp) > 2) {
-				
+
 				foreach ($temp as $k => $v) {
-					if ($k < 2) 
+					if ($k < 2)
 						continue;
 
 					$attr_str .= ':' . $v;
@@ -69,4 +73,6 @@ print_r($attr_arr);
 
 // exec('php -S localhost:8000 -t public',$return_var);
 // echo $return_var;
+$config = new ApplicationConfig();
 
+var_dump($config->getByKey('title'));
