@@ -34,13 +34,7 @@ class ApplicationConfig
 
     public function getByKey($key)
     {
-        try {
-            $config = Yaml::parse(file_get_contents($this->config_path));
-        } catch (Exception $e) {
-            echo '1ssss';
-        }
-
-        return $config[$key];
+        return $this->config[$key];
     }
 
     public function getTheme()
