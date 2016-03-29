@@ -20,4 +20,12 @@ class File extends Filesystem
     {
         # code...
     }
+    public function getPost($name)
+    {
+        # code...
+    }
+    public function getModifyTime($name)
+    {
+        # code...
+    }
 }
