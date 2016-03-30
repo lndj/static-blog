@@ -12,3 +12,5 @@
 ### 需要使用到模板引擎
 
 1. 需要选择是twig还是其他
+
+### Symfony/DI  Symfony/finder
