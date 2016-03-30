@@ -24,8 +24,5 @@ class File extends Filesystem
     {
         # code...
     }
-    public function getModifyTime($name)
-    {
-        # code...
-    }
+    
 }
