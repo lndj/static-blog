@@ -16,9 +16,13 @@ $process = new Process('php test.php');
 
 $process->start();
 
-while ($process->isRunning()) {
-    // waiting for process to finish
-    echo "string";
-}
+echo 'qqqq';
+sleep(1);
 
-echo $process->getOutput();
+$process->wait(function ($type, $buffer) {
+    if (Process::ERR === $type) {
+        echo 'ERR > '.$buffer;
+    } else {
+        echo 'OUT > '.$buffer;
+    }
+});
