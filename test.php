@@ -59,12 +59,11 @@ function getAttrArr(Iterator $file)
 }
 
 //Test to use
-/*$file = FileLineGenerator('./source/_posts/hello-world.md');
+$file = FileLineGenerator('other/source/_posts/hello-world.md');
 
 $attr_arr = getAttrArr($file);
 
 print_r($attr_arr);
-*/
 
 
 // exec('php -S localhost:8000 -t public',$return_var);
