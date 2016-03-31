@@ -14,10 +14,11 @@ use Symfony\Component\Process\Exception\ProcessFailedException;
 
 $process = new Process('php test.php');
 
-$process->run(function ($type, $buffer) {
-    if (Process::ERR === $type) {
-        echo 'ERR > '.$buffer;
-    } else {
-        echo 'OUT > '.$buffer;
-    }
-});
+$process->start();
+
+while ($process->isRunning()) {
+    // waiting for process to finish
+    echo "string";
+}
+
+echo $process->getOutput();
