@@ -62,7 +62,7 @@ function getAttrArr(Iterator $file)
 $file = FileLineGenerator('other/source/_posts/hello-world.md');
 
 $attr_arr = getAttrArr($file);
-sleep(2);
+
 print_r($attr_arr);
 
 
